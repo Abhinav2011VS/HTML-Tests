@@ -7,54 +7,68 @@
 <style>
   .download-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 30px;
     border: 2px solid #000;
-    border-radius: 20px;
+    border-radius: 30px;
     text-decoration: none;
     color: white;
     margin: 10px;
     background-color: black;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .download-btn:hover {
+    background-color: #333;
+    transform: translateY(-3px);
   }
   .download-btn img {
-    vertical-align: middle;
-    margin-right: 10px;
+    display: block;
+    margin: 0 auto 10px;
+    width: 80px;
     height: 80px;
-    width: 80px
   }
-  typesmall {
-    font-size: 20px;
+  .download-btn span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
-  typebig {
-    font-size: 30px;
+  .download-btn p {
+    font-size: 16px;
+    margin: 0;
   }
 </style>
 </head>
 <body>
 
 <a href="download.exe" download class="download-btn">
-  <img src="img.svg" alt="Windows Icon" width="24" height="24">
-  <typesmall>Download for</typesmall><br>
-  <typebig>Windows</typebig>
+  <img src="img.svg" alt="Windows Icon">
+  <span>Download for</span>
+  <p>Windows</p>
 </a>
 
 <a href="download.exe" download class="download-btn">
-  <img src="img.svg" alt="MacOS Icon" width="24" height="24">
-  Download for MacOS
+  <img src="img.svg" alt="MacOS Icon">
+  <span>Download for</span>
+  <p>MacOS</p>
 </a>
 
 <a href="download.exe" download class="download-btn">
-  <img src="img.svg" alt="Linux Icon" width="24" height="24">
-  Download for Linux
+  <img src="img.svg" alt="Linux Icon">
+  <span>Download for</span>
+  <p>Linux</p>
 </a>
 
 <a href="download.exe" download class="download-btn">
-  <img src="img.svg" alt="Android Icon" width="24" height="24">
-  Download for Android
+  <img src="img.svg" alt="Android Icon">
+  <span>Download for</span>
+  <p>Android</p>
 </a>
 
 <a href="download.exe" download class="download-btn">
-  <img src="img.svg" alt="iOS Icon" width="24" height="24">
-  Download for iOS
+  <img src="img.svg" alt="iOS Icon">
+  <span>Download for</span>
+  <p>iOS</p>
 </a>
 
 </body>
